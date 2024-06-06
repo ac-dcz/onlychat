@@ -1,0 +1,16 @@
+syntax = "proto3";
+
+option go_package="./;user";
+
+message  UserRequest{
+
+}
+
+message UserReponse{
+
+}
+
+
+service UserManager{
+    
+}
