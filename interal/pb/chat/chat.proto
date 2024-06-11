@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+option go_package = "./;chat";
+
+
+message SingleChatRequest{
+
+}
+
+message SingleChatResponse{
+
+}
+
+message MultyChatRequest{
+
+}
+
+message MultyChatResponse{
+
+}
+
+service ChatManager{
+    rpc SingleChat(stream SingleChatRequest) returns(stream SingleChatResponse);
+    rpc MultyChat(stream MultyChatRequest) returns(stream MultyChatResponse);
+}

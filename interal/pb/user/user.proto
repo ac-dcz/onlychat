@@ -2,15 +2,25 @@ syntax = "proto3";
 
 option go_package="./;user";
 
-message  UserRequest{
+message  SigninRequest{
 
 }
 
-message UserReponse{
+message SigninReponse{
 
 }
+
+message SignUpRequest{
+
+}
+
+message SignUpResponse{
+
+}
+
 
 
 service UserManager{
-    
+    rpc SignIn(SigninRequest) returns(SigninReponse);
+    rpc SignUp(SignUpRequest) returns(SignUpResponse);
 }
